@@ -345,7 +345,12 @@ footer {
 
 /*Reality Page */
 
-
+.page-bg {
+    position: absolute;
+    right: 10rem;
+    z-index: -1;
+    width: auto; height: auto;
+}
 
 /* Birds animation (floating effect) */
 /* .bird {
