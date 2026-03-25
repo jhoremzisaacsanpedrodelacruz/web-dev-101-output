@@ -38,14 +38,35 @@
 
 /* BODY? */
 * { margin:0; padding:0; box-sizing: border-box; }
+
+a{text-decoration-line: none;}
+
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    background-color: #9B937C;
     color: #ffffff;
     line-height: 1.6;
 }
 
+.page-1{
+    background-color: #9B937C;
+}
+
+.page-2{
+    background-color: #89826f;
+}
+
+.page-3{
+    background-color: #7b7561;
+}
+
+.page-4{
+    background-color: #89826f;
+}
+
+.page-5{
+    background-color: #89826f;
+}
 /* NAVIGATION buttons */
 
 .nav-top-right{
@@ -67,7 +88,7 @@ nav button {
     font-family: 'KoHo';
     font-weight: 600;
     margin-left: 0.2rem;
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -283,6 +304,48 @@ footer {
     z-index: -2;
     mix-blend-mode: multiply;
 }
+
+/*INFO CSS*/
+
+.subtitle {
+    font-family: 'KoHo';
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.info-block h2 {
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+.info-block h2:hover {
+    color: #d1caa1;
+    transform: scale(1.02);
+}
+
+.info-block p {
+    background-color: rgba(255,255,255,0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    transition: background-color 0.3s, transform .5s;
+}
+.info-block p:hover {
+    transform:scale(1.08);
+    background-color: rgba(255,255,255,0.15);
+}
+
+
+/*Reality Page */
+
+
 
 /* Birds animation (floating effect) */
 /* .bird {
