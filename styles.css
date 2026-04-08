@@ -357,6 +357,16 @@ footer {
     width: auto; height: auto;
 }
 
+/* Morality Page */
+.gate {
+    position:absolute;
+    right: 0vw;
+    width: 40vw;
+    height: 80vh;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+
 /* Birds animation (floating effect) */
 /* .bird {
     position: absolute;
