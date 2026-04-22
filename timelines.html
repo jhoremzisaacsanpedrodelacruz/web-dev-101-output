@@ -3,131 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline Of Philosophy</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./img/human-icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Timelines - Philosophy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-
 <body class="page-2">
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
-
-        <a class="nav-top-left" href="./index.html"> 
-            <img src="img/human-icon.png" alt="home-button">
-            <a href="./index.html" class="nav-philosophy">Philosophy</a>
-        </a>    
-
-        <div class="nav-top-right navbar-nav navbar-nav-scroll ms-auto flex-row">
-
-            <a href="./index.html" class="button-1">Home</a>
-            <a href="./timelines.html" class="button-1 button-activated">Timelines</a>
-            <a href="./reality.html" class="button-1">Reality</a>
-            <a href="./morality.html" class="button-1">Morality</a>
-            <a href="./society.html" class="button-1">Society</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Philosophy</a>
+            <div class="navbar-collapse">
+                <ul class="nav nav-tabs ms-auto" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link  nav-active" href="timelines.html">Timelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reality.html">Reality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="morality.html">Morality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="society.html">Society</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="title container-fluid px-3 px-lg-5">
-        <div class="row">
-            <div class="col-lg-8">
-                <img class="clock-melting img-fluid" src="./img/clock-melting.png" alt="clock-melting">
-                <h1>TIMELINE OF PHILOSOPHY</h1>
-            </div>
+    <!-- TIMELINE CONTENT -->
+<div class="timelines" style="position: relative;">
+        <img src="./img/clock-melting.png" style="position: absolute;width: 50vw; mix-blend-mode:multiply; opacity: 0.5;">
+
+        <h1>TIMELINE OF PHILOSOPHY</h1>
+
+        <div class="timelines-item">
+            <h2>Ancient Foundations</h2>
+            <p>
+                The birth of philosophy in ancient Greece marked humanity's first systematic attempt to understand reality through reason rather than myth. From 600 BCE onwards, thinkers like Thales, Heraclitus, and Pythagoras asked fundamental questions about the nature of matter, change, and order. Socrates revolutionized philosophy by focusing on ethical inquiry and the examination of life itself. Plato created a comprehensive philosophical system addressing reality, knowledge, ethics, and politics. Aristotle brought empirical observation to philosophy and created frameworks for logic, metaphysics, ethics, and politics that would dominate Western thought for centuries.
+            </p>
+        </div>
+
+        <div class="timelines-item">
+            <h2>The Enlightenment</h2>
+            <p>
+                The seventeenth and eighteenth centuries saw philosophy transform the intellectual landscape of Europe and beyond. Descartes questioned all received wisdom and sought absolute certainty through reason alone. Locke and Hume explored how knowledge arises from sensory experience. Kant unified rationalism and empiricism, arguing that the mind actively shapes our experience of reality. Smith examined economics and moral sentiment. These thinkers laid the groundwork for modern science, democracy, and economic theory, fundamentally reshaping how humans understood themselves and society.
+            </p>
+        </div>
+
+        <div class="timelines-item">
+            <h2>Modern Thought</h2>
+            <p>
+                From the nineteenth century to today, philosophy has become increasingly diverse, pluralistic, and global. Hegel explored history as the development of human freedom. Marx examined capitalism and class. Nietzsche challenged fundamental values and morality itself. Pragmatists asked what difference ideas make in practice. Analytic philosophers developed formal logic and language philosophy. Continental thinkers explored consciousness, existence, and power. Feminist philosophers examined how gender shapes knowledge and society. Contemporary philosophy engages with artificial intelligence, environmental ethics, and global justice, proving that philosophy remains vital for understanding our rapidly changing world.
+            </p>
         </div>
     </div>
 
-    <div class="info-block col-lg-8 offset-lg-1">
-        <h2>Ancient Foundations</h2>
-        <p><strong>Socrates</strong> — Known for questioning everything. He believed wisdom begins with admitting ignorance.</p>
-        <p><strong>Plato</strong> — Student of Socrates. Proposed that reality exists beyond what we see.</p>
-        <p><strong>Aristotle</strong> — Focused on logic, ethics, science, and observation. Influenced Western thought for centuries.</p>
-
-        <h2>The Enlightenment</h2>
-        <p><strong>René Descartes</strong> — Declared, "I think, therefore I am." Sought certainty through reason.</p>
-        <p><strong>John Locke</strong> — Argued that knowledge comes from experience and defended natural rights.</p>
-        <p><strong>Immanuel Kant</strong> — Tried to unite reason and experience, redefining ethics and knowledge.</p>
-
-        <h2>Modern Thought</h2>
-        <p><strong>Friedrich Nietzsche</strong> — Challenged traditional morality and encouraged self-overcoming.</p>
-        <p><strong>Karl Marx</strong> — Analyzed capitalism and class struggle.</p>
-        <p><strong>Jean-Paul Sartre</strong> — Argued that humans are radically free and responsible for their choices.</p>
-    </div>
-
-    <!-- More Info Section -->
-    <div class="more-info-section container-fluid px-3 px-lg-5">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-1">
-                <h3>Philosophy Timeline Highlights</h3>
-                <div class="accordion" id="timelinesAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAncient">
-                                ~400 BC: Ancient Greece (Socrates, Plato, Aristotle)
-                            </button>
-                        </h2>
-                        <div id="collapseAncient" class="accordion-collapse collapse show" data-bs-parent="#timelinesAccordion">
-                            <div class="accordion-body">
-                                <p>The birth of Western philosophy. Socrates never wrote anything; Plato recorded dialogues; Aristotle systematized knowledge.</p>
-                                <ul>
-                                    <li><strong>Key Shift:</strong> From myth to reason.</li>
-                                    <li><strong>Influence:</strong> Foundation for science, ethics, politics.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnlightenment">
-                                1600s-1700s: Enlightenment (Descartes, Locke, Kant)
-                            </button>
-                        </h2>
-                        <div id="collapseEnlightenment" class="accordion-collapse collapse" data-bs-parent="#timelinesAccordion">
-                            <div class="accordion-body">
-                                <p>Emphasis on reason, individual rights, empiricism. Challenged church authority and absolute monarchy.</p>
-                                <ul>
-                                    <li><strong>Impact:</strong> American/French Revolutions, scientific method.</li>
-                                    <li><strong>Key Question:</strong> How do we know what we know?</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModern">
-                                1800s-1900s: Modern (Nietzsche, Marx, Sartre)
-                            </button>
-                        </h2>
-                        <div id="collapseModern" class="accordion-collapse collapse" data-bs-parent="#timelinesAccordion">
-                            <div class="accordion-body">
-                                <p>Critique of tradition, focus on power, freedom, psychology. Rise of existentialism and ideology.</p>
-                                <ul>
-                                    <li><strong>Legacy:</strong> Postmodernism, identity politics, tech ethics.</li>
-                                    <li><strong>Today:</strong> AI, climate, democracy challenges echo these debates.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer container-fluid px-3 px-lg-5">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-1">
-                <p>&copy; 2026 Philosophy of Times. Exploring timeless questions.</p>
-                <p>
-                    <a href="./index.html">Home</a> | 
-                    <a href="./timelines.html">Timelines</a> | 
-                    <a href="./reality.html">Reality</a> | 
-                    <a href="./morality.html">Morality</a> | 
-                    <a href="./society.html">Society</a>
-                </p>
-                <p>Built for Web Development 1 Subject.</p>
-            </div>
-        </div>
+    <footer>
+        <p>© 2026 Philosophy. Web Development 1 Final Project - Made by Jhoremz</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+

@@ -3,134 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power, Freedom & Society</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./img/human-icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Society - Philosophy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body class="page-5">
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
-
-        <a class="nav-top-left" href="./index.html"> 
-            <img src="img/human-icon.png" alt="home-button">
-            <a href="./index.html" class="nav-philosophy">Philosophy</a>
-        </a>    
-
-        <div class="nav-top-right navbar-nav navbar-nav-scroll ms-auto flex-row">
-
-            <a href="./index.html" class="button-1">Home</a>
-            <a href="./timelines.html" class="button-1">Timelines</a>
-            <a href="./reality.html" class="button-1">Reality</a>
-            <a href="./morality.html" class="button-1">Morality</a>
-            <a href="./society.html" class="button-1 button-activated">Society</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Philosophy</a>
+            <div class="navbar-collapse">
+                <ul class="nav nav-tabs ms-auto" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="timelines.html">Timelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reality.html">Reality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="morality.html">Morality</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link  nav-active" href="society.html">Society</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Page Title -->
-    <div class="title container-fluid px-3 px-lg-5">
-        <div class="row">
-            <div class="col-lg-8">
-                <h1>POWER, FREEDOM & SOCIETY</h1>
-                <p class="subtitle">How Should Society Be Structured?</p>
-            </div>
+    <!-- SOCIETY CONTENT -->
+<div class="content-section" style="position: relative;">
+        <img src="./img/puppet-hand.png" style="position: absolute;width: 30vw; left:35%;opacity:0.4;mix-blend-mode:multiply; ">
+
+        <div class="content-text">
+            <h1>How Should Society Be Structured?</h1>
+            <p>
+                The organization of society reflects fundamental choices about power, justice, and human dignity. Philosophers from Plato onwards have explored what makes a just society and how power should be distributed among its members.
+            </p>
+            <p>
+                Classical thinkers debated whether rule should rest with the virtuous elite, the people, or distributed institutions. Social contract theorists like Hobbes, Locke, and Rousseau imagined societies as agreements among free individuals. Later thinkers examined the role of class, property, and economic systems in shaping social order.
+            </p>
+            <p>
+                Modern philosophy has wrestled with pressing questions: What rights does each person possess? How should societies balance equality with liberty? What responsibilities do the powerful owe to the vulnerable? How can diverse groups live together justly?
+            </p>
+            <p>
+                These philosophical questions remain urgent today, guiding debates about democracy, capitalism, education, gender, and how human societies might flourish in an interconnected world.
+            </p>
         </div>
+        <div class="content-image"></div>
     </div>
 
-    <!-- Main Info -->
-    <div class="info-block col-lg-8 offset-lg-1">
-        <p class="intro">Political philosophy examines authority, rights, and freedom.</p>
-
-        <h2>John Locke — Natural Rights</h2>
-        <p>Locke argued that all humans possess rights to life, liberty, and property.</p>
-
-        <h2>Karl Marx — Class and Capital</h2>
-        <p>Marx believed economic systems shape society and argued for radical restructuring.</p>
-
-        <h2>Jean-Paul Sartre — Radical Freedom</h2>
-        <p>Sartre believed humans are free and fully responsible for their choices.</p>
-
-        <h2>Simone de Beauvoir — Social Oppression</h2>
-        <p>She explored how society constructs identity and limits freedom.</p>
-
-        <h2>Final Reflection</h2>
-        <p>Philosophy is not about memorizing names. It is about learning to question, reason, and build a coherent view of the world. The ideas of these thinkers continue to shape technology, politics, ethics, and personal identity today.</p>
-    </div>
-
-    <!-- More Info Section -->
-    <div class="more-info-section container-fluid px-3 px-lg-5">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-1">
-                <h3>Society: Key Concepts & Critiques</h3>
-                <div class="accordion" id="societyAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocke">
-                                Locke's Social Contract
-                            </button>
-                        </h2>
-                        <div id="collapseLocke" class="accordion-collapse collapse show" data-bs-parent="#societyAccordion">
-                            <div class="accordion-body">
-                                <p>Government exists to protect natural rights; if it fails, people have right to revolt.</p>
-                                <ul>
-                                    <li><strong>Influence:</strong> US Declaration of Independence.</li>
-                                    <li><strong>Quote:</strong> "The end of law is not to abolish or restrain, but to preserve and enlarge freedom."</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMarx">
-                                Marx's Historical Materialism
-                            </button>
-                        </h2>
-                        <div id="collapseMarx" class="accordion-collapse collapse" data-bs-parent="#societyAccordion">
-                            <div class="accordion-body">
-                                <p>History is class struggle driven by economic forces. Capitalism alienates workers from their labor.</p>
-                                <ul>
-                                    <li><strong>Solution:</strong> Communism – classless society.</li>
-                                    <li><strong>Critique:</strong> Led to authoritarian regimes in practice.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSartre">
-                                Sartre & Existential Freedom
-                            </button>
-                        </h2>
-                        <div id="collapseSartre" class="accordion-collapse collapse" data-bs-parent="#societyAccordion">
-                            <div class="accordion-body">
-                                <p>"Man is condemned to be free." Society imposes "bad faith" to escape responsibility.</p>
-                                <ul>
-                                    <li><strong>Implication:</strong> Authentic living requires owning choices.</li>
-                                    <li><strong>Modern:</strong> Influences identity politics and personal empowerment.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer container-fluid px-3 px-lg-5">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-1">
-                <p>&copy; 2026 Philosophy of Times. Exploring timeless questions.</p>
-                <p>
-                    <a href="./index.html">Home</a> | 
-                    <a href="./timelines.html">Timelines</a> | 
-                    <a href="./reality.html">Reality</a> | 
-                    <a href="./morality.html">Morality</a> | 
-                    <a href="./society.html">Society</a>
-                </p>
-                <p>Built for Web Development 1 Subject.</p>
-            </div>
-        </div>
+    <footer>
+        <p>© 2026 Philosophy. Web Development 1 Final Project - Made by Jhoremz</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
