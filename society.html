@@ -6,14 +6,18 @@
     <title>Power, Freedom & Society</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./img/human-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxIlFvY47J16cr9ZwB07v4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body class="page-5">
-    <nav>
+    <nav class="navbar navbar-expand-lg">
+
         <a class="nav-top-left" href="./index.html"> 
             <img src="img/human-icon.png" alt="home-button">
+            <a href="./index.html" class="nav-philosophy">Philosophy</a>
         </a>    
 
-        <div class="nav-top-right">
+        <div class="nav-top-right navbar-nav navbar-nav-scroll ms-auto flex-row">
+
             <a href="./index.html" class="button-1">Home</a>
             <a href="./timelines.html" class="button-1">Timelines</a>
             <a href="./reality.html" class="button-1">Reality</a>
@@ -23,13 +27,17 @@
     </nav>
 
     <!-- Page Title -->
-    <div class="title">
-        <h1>POWER, FREEDOM & SOCIETY</h1>
-        <p class="subtitle">How Should Society Be Structured?</p>
+    <div class="title container-fluid px-3 px-lg-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>POWER, FREEDOM & SOCIETY</h1>
+                <p class="subtitle">How Should Society Be Structured?</p>
+            </div>
+        </div>
     </div>
 
     <!-- Main Info -->
-    <div class="info-block">
+    <div class="info-block col-lg-8 offset-lg-1">
         <p class="intro">Political philosophy examines authority, rights, and freedom.</p>
 
         <h2>John Locke — Natural Rights</h2>
@@ -47,5 +55,82 @@
         <h2>Final Reflection</h2>
         <p>Philosophy is not about memorizing names. It is about learning to question, reason, and build a coherent view of the world. The ideas of these thinkers continue to shape technology, politics, ethics, and personal identity today.</p>
     </div>
+
+    <!-- More Info Section -->
+    <div class="more-info-section container-fluid px-3 px-lg-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-1">
+                <h3>Society: Key Concepts & Critiques</h3>
+                <div class="accordion" id="societyAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocke">
+                                Locke's Social Contract
+                            </button>
+                        </h2>
+                        <div id="collapseLocke" class="accordion-collapse collapse show" data-bs-parent="#societyAccordion">
+                            <div class="accordion-body">
+                                <p>Government exists to protect natural rights; if it fails, people have right to revolt.</p>
+                                <ul>
+                                    <li><strong>Influence:</strong> US Declaration of Independence.</li>
+                                    <li><strong>Quote:</strong> "The end of law is not to abolish or restrain, but to preserve and enlarge freedom."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMarx">
+                                Marx's Historical Materialism
+                            </button>
+                        </h2>
+                        <div id="collapseMarx" class="accordion-collapse collapse" data-bs-parent="#societyAccordion">
+                            <div class="accordion-body">
+                                <p>History is class struggle driven by economic forces. Capitalism alienates workers from their labor.</p>
+                                <ul>
+                                    <li><strong>Solution:</strong> Communism – classless society.</li>
+                                    <li><strong>Critique:</strong> Led to authoritarian regimes in practice.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSartre">
+                                Sartre & Existential Freedom
+                            </button>
+                        </h2>
+                        <div id="collapseSartre" class="accordion-collapse collapse" data-bs-parent="#societyAccordion">
+                            <div class="accordion-body">
+                                <p>"Man is condemned to be free." Society imposes "bad faith" to escape responsibility.</p>
+                                <ul>
+                                    <li><strong>Implication:</strong> Authentic living requires owning choices.</li>
+                                    <li><strong>Modern:</strong> Influences identity politics and personal empowerment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer container-fluid px-3 px-lg-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-1">
+                <p>&copy; 2026 Philosophy of Times. Exploring timeless questions.</p>
+                <p>
+                    <a href="./index.html">Home</a> | 
+                    <a href="./timelines.html">Timelines</a> | 
+                    <a href="./reality.html">Reality</a> | 
+                    <a href="./morality.html">Morality</a> | 
+                    <a href="./society.html">Society</a>
+                </p>
+                <p>Built for Web Development 1 Subject.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

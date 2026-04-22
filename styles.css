@@ -64,8 +64,28 @@ body {
     background-color: #615b49;
 }
 
-.page-5{
+.page-5 {
     background-color: #413d31;
+}
+
+.page-5::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 1000px;
+    height: 80vh;
+    z-index: -10;
+    max-height: 700px;
+    background-image: url("./img/puppet-hand.png");
+    filter: grayscale(100%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: -1;
 }
 /* NAVIGATION buttons */
 
@@ -87,7 +107,7 @@ body {
 nav button {
     font-family: 'KoHo';
     font-weight: 600;
-    margin-left: 0.2rem;
+    margin-left: 0.3rem;
     padding: 2rem 1rem;
     border: none;
     border-radius: 3px;
@@ -101,6 +121,25 @@ nav button {
 nav button:hover {
     background-color: #4A4639;
     color: white
+}
+
+.nav-philosophy {
+    position: absolute;
+    top: 1.5rem;
+    left: 4rem;
+    font-family: 'KoHo';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    transition: color 0.3s, text-shadow 0.3s;
+    z-index: 10;
+}
+
+.nav-philosophy:hover {
+    color: #615b49;
+    text-shadow: none;
 }
 
 /* HERO */
@@ -162,16 +201,18 @@ nav button:hover {
 .hero .human-shadows{
     position: absolute;
     width: 100vw;
-    height: 150vh;
+    height: 120vh;
+    max-height: 120vh;
     z-index: -2;
     mix-blend-mode: multiply;
 }
 
 .hero .the-thinker{
     position: absolute;
-    width: 30vw;
-    height: 80vh;
-    right: 2rem;
+    width: 25vw;
+    max-width: 300px;
+    height: auto;
+    right: 1rem;
     z-index: -1;
 }
 
@@ -214,9 +255,10 @@ main ul li {
 
 main .birds {
     position:absolute;
-    right: 2rem;
-    width: 50vw;
-    height: 50vh;
+    right: 1rem;
+    width: 40vw;
+    max-width: 400px;
+    height: auto;
     mix-blend-mode:lighten;
 }
 
@@ -227,7 +269,7 @@ main .birds {
     font-family: 'KoHo';
     font-weight: 600;
     margin-top: 2rem;
-    margin-left: 0.2rem;
+    margin-left: 0.6rem;
     padding: 0.7rem 1.2rem;
     border: none;
     border-radius: 6px;
@@ -248,13 +290,156 @@ main .birds {
     color: #ffffff;
 }
 
-/* Footer */
-footer {
+/* Footer & More Info */
+.more-info-section {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 2rem;
+    border: 0.4vw solid #ffffff;
+    border-top: none;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.more-info-section h3 {
+    font-family: "KoHo";
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fcefa6;
+}
+
+.more-info-section .accordion-button {
+    font-family: "KoHo";
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.more-info-section .accordion-button:not(.collapsed) {
+    background-color: rgba(255,255,255,0.2);
+    color: #4A4639;
+}
+
+.more-info-section .accordion-body {
+    background-color: rgba(255,255,255,0.08);
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.more-info-section .accordion-body p, .more-info-section .accordion-body ul {
+    font-family: "KoHo";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #9B937C;
+    padding: 2rem;
+    background-color: #4A4639;
     color: #fff;
     margin-top: 2rem;
+    border-top: 0.2vw solid #fff;
+}
+
+.footer a {
+    color: #fcefa6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.back-to-top:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.back-to-top.show {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .more-info-section, .footer {
+        margin-left: 0 !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/* MOBILE VERSION? */
+@media (max-width: 991.98px) {
+    .nav-top-right {
+        position: static !important;
+        margin-top: 1rem;
+    }
+    
+    .nav-top-right a {
+        display: block;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-top-left {
+        position: static !important;
+        margin-bottom: 1rem;
+    }
+    
+    .title, .info-block, .hero, main {
+        margin-left: 0 !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .hero h1 { font-size: 3rem !important; }
+    .hero h2 { font-size: 1.5rem !important; }
+    .hero p { font-size: 1rem !important; width: auto !important; }
+    
+    .info-block { padding: 1rem !important; height: auto !important; }
+    
+    .page-bg, .clock-melting, .gate, .human-shadows, .the-thinker, .birds {
+        width: 90vw !important;
+        max-width: 90vw !important;
+        height: auto !important;
+        right: 0 !important;
+        position: relative !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    
+    nav button {
+        padding: 1rem !important;
+        font-size: 0.9rem !important;
+    }
 }
 
 
@@ -316,7 +501,7 @@ footer {
     font-family: 'KoHo';
     font-weight: 500;
     font-size: 1.5rem;
-    color: #fcefa6;
+    color: #ffccb4;
     margin-bottom: 1rem;
 }
 
